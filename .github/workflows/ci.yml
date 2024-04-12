@@ -13,9 +13,9 @@ jobs:
   test:
     runs-on: ${{ matrix.os }}
     strategy:
-      deno: 
-          - v1.x
       matrix:
+        deno: 
+            - v1.x
         os:
           - ubuntu-22-04
           - macos-12
@@ -38,9 +38,9 @@ jobs:
   lint:
     runs-on: ${{ matrix.os }}
     strategy:
-      deno: 
-          - v1.x
       matrix:
+        deno: 
+            - v1.x
         os:
           - ubuntu-22-04
           - macos-12
