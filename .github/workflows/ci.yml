@@ -39,12 +39,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        deno: 
-            - v1.x
         os:
           - ubuntu-22-04
-          - macos-12
-          - windows-2022
     steps:
       - name: Clone repo
         uses: actions/checkout@v4
@@ -52,11 +48,10 @@ jobs:
       - name: Install Deno
         uses: denoland/setup-deno@v1
         with:
-          deno-version: ${{ matrix.deno }}
+          deno-version: v1.x
 
       - name: Run formatter
         run: deno fmt --check
 
       - name: Run linter
         run: deno lint
-        

@@ -3,7 +3,6 @@
 <strong>kz-${pkgName}</strong>
 </p>
 
-
 <p align="center">
 kz is a collection of easy-to-use utility and feature libraries for creating anything you want with the <a href="https://deno.com">Deno</a> runtime.
 </p>
@@ -106,7 +105,6 @@ And then import into your module.
 ```ts
 import {} from '@kz/${pkgName}';
 ```
-
 
 ## Examples
 
